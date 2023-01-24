@@ -1,0 +1,21 @@
+/* styles.css */
+/* class declarations */
+.odd {
+    background-color: #FEA7A7;
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+.large {
+    font-size: 24px;
+}
+
+/* ID declarations */
+#num-2 {
+    color: #0000FF;
+    font-size: 36px;
+}
+
+#num-4 {
+    background-color: #80FF80;
+    font-weight: bold;
+}
