@@ -1,19 +1,32 @@
+/* * {
+  border: 1px dotted red;
+} */
+
 body {
+  text-align: center;
+
+  /* defualt setting */
   font-family: 'Courier New', Courier, monospace;
 }
 
 img {
+  /* defualt setting */
   width: 100px;
   height: 100px;
 }
 
 .title {
+  margin: 0px auto;
+  margin-bottom: 32px;
+
+  /* defualt setting */
   font-size: 36px;
   font-weight: 900;
 }
 
 /* do not edit this footer */
 .footer {
+  /* defualt setting */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -23,4 +36,21 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/* Added CSS delarations */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.flex-item {
+  /* flex-item properties */
+  flex: 0 0 200px;
+
+  /* flex-container properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
