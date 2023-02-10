@@ -2,19 +2,32 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/* * {
+  border: 1px dotted red;
+} */
+
 body {
+  /* default setting */
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+
+  /* default setting */
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
 .profile-image {
+  flex: 0 0 auto;
+  /* default setting */
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
@@ -23,6 +36,7 @@ body {
 }
 
 .logo {
+  /* default setting */
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -30,6 +44,7 @@ body {
 }
 
 button {
+  /* default setting */
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
@@ -38,11 +53,27 @@ button {
 }
 
 a {
+  /* default setting */
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
 ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+
+  /* default setting */
   list-style-type: none;
+}
+
+
+/* New declarations added to improve functionality */
+.left-links, .right-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
